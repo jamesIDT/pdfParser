@@ -1,0 +1,2 @@
+Flask
+git+https://github.com/titipata/scipdf_parser.git

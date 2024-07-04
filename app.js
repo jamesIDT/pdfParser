@@ -48,11 +48,16 @@ async function handleFileUpload(event) {
             body: formData
         });
 
+        if (!response.ok) {
+            const errorDetails = await response.json();
+            throw new Error(errorDetails.error || 'Unknown error occurred');
+        }
+
         const result = await response.json();
         document.getElementById('output').innerText = JSON.stringify(result, null, 2);
     } catch (error) {
         console.error('Error uploading file:', error);
-        document.getElementById('output').innerText = 'Error uploading file. Please try again.';
+        document.getElementById('output').innerText = `Error uploading file: ${error.message}`;
     }
 }
 
