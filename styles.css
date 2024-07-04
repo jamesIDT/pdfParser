@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.introduction-box {
+    margin-bottom: 20px;
+}
+
+.upload-container {
+    margin-top: 20px;
+}
+
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#fileInput {
+    margin-bottom: 10px;
+}
+
+#output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
